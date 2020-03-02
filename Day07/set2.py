@@ -1,0 +1,30 @@
+'''
+集合的常用操作
+- 交集
+- 并集
+- 差集
+- 子集
+- 超集
+@Time : 2020/1/14 9:57
+@Author : wangmengying
+@File : set2.py
+'''
+
+def main():
+    set1 = set(range(1,7))
+    print(set1)
+    set2 = set(range(2,11,2))
+    print(set2)
+    set3 = set(range(1,5))
+    print(set3)
+    print(set1 & set2)
+    print(set1 | set2)
+    print(set1 ^ set2)
+    print(set1 - set2)
+    print(set2 <= set1)
+    print(set3 <= set1)
+    print(set1 >= set2)
+    print(set1 >= set3)
+
+if __name__ == '__main__':
+    main()
